@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.SuiteInternacional"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource  MidnightBlue}">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Suítes Internacionais 🌍✈️"
+               FontFamily="Kalam"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <Label  Text="Países : " />
+                <Picker x:Name="pck_paises"
+                        Title="Escolha o País"
+                        FontFamily="Kalam"
+                        TextColor="{StaticResource Primary}"
+                        ItemDisplayBinding="{Binding Paises}"/>
+                        
+
+
+
+            </HorizontalStackLayout>
+            
+            
+            
+        </Frame>
+
+        
+        
+        
+        
+
+        <Frame Margin="10">
+
+            <HorizontalStackLayout>
+
+                <Label Text="Cidade : " />
+                <Picker x:Name="pck_cidade"
+                        Title="Escolha a Cidade"
+                        FontFamily="Kalam"
+                        TextColor="{StaticResource Primary}"
+                        ItemDisplayBinding="{Binding Cidade}"/>
+
+            </HorizontalStackLayout>
+
+
+
+        </Frame>
+
+        <Frame Margin="10" HorizontalOptions="Center">
+            <Label Text="Parabéns por escolher uma experiência além das fronteiras! Sua suíte internacional é o convite perfeito para transformar cada momento em uma memória inesquecível, repleta de conforto, luxo e descobertas pelo mundo.” ✈️🏨"/>
+
+
+
+        </Frame>
+        
+        
+        
+        
+        
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                BackgroundColor="Brown"
+                Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
